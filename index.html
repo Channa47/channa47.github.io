@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -291,9 +292,20 @@
           </div>
         </div>
       </div>
-	  <h2 style="margin-top:10px ;">Git Calender</h2>
+	  <!-- <h2 style="margin-top:10px ;">Git Calender</h2> -->
 	  
-	  <img id="imgofgitcal" src="./images/gitcallll.png" width="100%"  alt="gitcalender" style="margin-top:30px" style="padding: 20px;">
+	  <!-- <img id="imgofgitcal" src="./images/gitcallll.png" width="100%"  alt="gitcalender" style="margin-top:30px" style="padding: 20px;"> -->
+	  <div style="margin-right: 200px;" id="githubCommits" class="row" onclick="gotogit()">
+        <!-- GitHub Commits -->
+          <div class="col offset-lg-3 offset-xl-2 p-md-5">
+            <div class="d-none d-md-block" >
+              <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+              </div>
+            </div>
+          </div>
+        </div>
 	
     </section>
 
@@ -373,14 +385,18 @@
   
   <script src="js/main.js"></script>
 
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
     
   </body>
 </html>
 <script>
-	let bb = document.getElementById("imgofgitcal");
+	let bb = document.getElementById("githubCommits");
 	bb.addEventListener("click" , ()=>{
 		// event.preventdefault();
 		window.open(
             "https://github.com/Channa47", "_blank");
 	})
+
+	new GitHubCalendar(".calendar", "Channa47", { responsive: true });
 </script>
