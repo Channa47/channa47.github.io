@@ -8734,6 +8734,7 @@ h1, h2, h3, h4, h5,
     outline: none; }
   .btn.btn-primary {
     background: #33b249;
+    border: #000;
     border: 1px solid #33b249 !important;
     font-size: 18px;
     width: 150px;
