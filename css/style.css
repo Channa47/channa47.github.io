@@ -430,9 +430,11 @@ code {
   border: 1px solid transparent;
   width: 70%;
   margin: auto;
-  margin-top: 10%;
+  /* margin-top: 300px; */
+  margin-top: 18%;
   text-align: center;
-}    
+} 
+
 
 kbd {
   padding: 0.2rem 0.4rem;
