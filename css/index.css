@@ -260,7 +260,7 @@
     }
   } 
   
-   @media only screen and (min-width: 376px) and (max-width: 425px){
+   @media only screen and (min-width: 375px) and (max-width: 425px){
     .skills{
       border: 1px solid transparent;
       display: grid;
@@ -303,6 +303,9 @@
   
       #nameDiv>h1{
         font-size: 30px;
+      }
+      .h1{
+        border : 2px solid red;
       }
 
       .mobile_view{
