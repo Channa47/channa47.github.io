@@ -430,8 +430,7 @@ code {
   border: 1px solid transparent;
   width: 70%;
   margin: auto;
-  /* margin-top: 300px; */
-  margin-top: 8%;
+  margin-top: 8% !important;
   text-align: center;
 } 
 
