@@ -4,7 +4,9 @@
     grid-template-columns: repeat(4,1fr);
     grid-gap: 50px;
   }
-  
+  #HomeScrolltoTop:hover{
+    cursor: pointer;
+ }
   .logo_div{
     border: 1px solid transparent;
     text-align: center;
