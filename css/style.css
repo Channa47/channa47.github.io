@@ -431,7 +431,7 @@ code {
   width: 70%;
   margin: auto;
   /* margin-top: 300px; */
-  margin-top: 18%;
+  /* margin-top: 12%; */
   text-align: center;
 } 
 
@@ -9707,3 +9707,8 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+    #HomeScrolltoTop:hover{
+       cursor: pointer;
+    }

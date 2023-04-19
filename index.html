@@ -46,6 +46,7 @@
 			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#blog-section">Stats</a>
 			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#contact-section">Contact</a>
 			  <p  style="margin-top: 10px;"><p  onclick="DownloadFile('Channa-Keshava-Resume.pdf')"  target="_blank" class="btn btn-primary py-3 px-3" >Resume</p></p>
+			  <!-- <p  style="margin-top: 10px;"><p  onclick="DownloadFile('Channa-Keshava-Resume.pdf')"  target="_blank" class="dropdown-item" >Resume</p></p> -->
 			</div>
 		  </div>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
@@ -54,13 +55,14 @@
 
 	      <div  class="collapse navbar-collapse"  id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#nameDiv" class="nav-link"><span>Home</span></a></li>
+	          <li id="HomeScrolltoTop"  class="nav-item"><a onclick="scrolltoTop()" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Stats</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 			  <li class="nav-item"><p  style="margin-top: 10px;"><p download="Channa-Keshava-Resume.pdf"  onclick="DownloadFile('Channa-Keshava-Resume.pdf')" href="https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link" target="_blank" class="btn btn-primary py-3 px-3">Resume</p></p></li>
+			  <!-- <li class="nav-item"><p  style="margin-top: 10px;"><p download="Channa-Keshava-Resume.pdf"  onclick="DownloadFile('Channa-Keshava-Resume.pdf')" href="https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link" target="_blank" class="nav-link">Resume</p></p></li> -->
 	        </ul>
 	      </div>
 	    </div>
@@ -71,6 +73,9 @@
     <div id="profileimage">
       <img src="images/channa_yello.png" alt="">
     </div>
+	<br>
+	<br>
+	<br>
 	<div id="nameDiv" class="col-md-12 text-center">
 		<div>
 			<br>
@@ -479,6 +484,11 @@
   </body>
 </html>
 <script>
+
+	function scrolltoTop(){
+		document.body.scrollTop = 0; // For Safari
+  		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
 	let bb = document.getElementById("githubCommits");
 	bb.addEventListener("click" , ()=>{
 		// event.preventdefault();
