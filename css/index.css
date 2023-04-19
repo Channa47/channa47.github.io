@@ -7,9 +7,28 @@
   #HomeScrolltoTop:hover{
     cursor: pointer;
  }
+ .hidden{
+   opacity: 0;
+   filter: blur(5px);
+   transform: translateX(-100%);
+   transition: all 1s;
+ }
+ @media(prefers-reduced-motion){
+    .hidden{
+      transition: none;
+    }
+ }
+ .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+ }
   .logo_div{
     border: 1px solid transparent;
     text-align: center;
+  }
+  .blogs:nth-child(2){
+    transition-delay: 100ms;
   }
   
   .logo_div>img{
