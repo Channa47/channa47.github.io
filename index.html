@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 </head>
 <body>
   <!-- Navbar -->
@@ -126,6 +127,20 @@
       </div>
     </div>
   </div>
+  <!-- calender -->
+  <section>
+    <div style="margin-right: 200px;" id="githubCommits" class="row hidden" >
+      <!-- GitHub Commits -->
+        <div class="col offset-lg-3 offset-xl-2 p-md-5">
+          <div class="d-none d-md-block" >
+            <div class="calendar react-activity-calendar">
+              <!-- Loading stuff -->
+              Loading the data just for you.
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 </section>
 <section id="contact" class="contact section">
   <div class="container">
@@ -224,17 +239,17 @@
         };
 
 
-		const obhserver = new IntersectionObserver((entries)=>{
-			entries.forEach((entry)=>{
-				if(entry.isIntersecting){
-					entry.target.classList.add("show")
-				}else{
-					entry.target.classList.remove("show")
-				}
-			})
-		})
+		// const obhserver = new IntersectionObserver((entries)=>{
+		// 	entries.forEach((entry)=>{
+		// 		if(entry.isIntersecting){
+		// 			entry.target.classList.add("show")
+		// 		}else{
+		// 			entry.target.classList.remove("show")
+		// 		}
+		// 	})
+		// })
 
-		const hiddenElemts = document.querySelectorAll('.hidden');
-		hiddenElemts.forEach((el)=>obhserver.observe(el));
+		// const hiddenElemts = document.querySelectorAll('.hidden');
+		// hiddenElemts.forEach((el)=>obhserver.observe(el));
 
   </script>
