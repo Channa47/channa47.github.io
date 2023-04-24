@@ -15,7 +15,7 @@
       <li><a class="nav-link skills" href="#skills">Skills</a></li>
       <li><a class="nav-link projects" href="#projects">Projects</a></li>
       <li><a class="nav-link contact" href="#contact">Contact</a></li>
-      <li><a class="nav-link resume" href="#" target="_blank" rel="noopener noreferrer">Resume</a></li>
+      <p  style="margin-top: 10px;"><p  onclick="DownloadFile('Channa-Keshava-Resume.pdf')"  target="_blank" class="btn btn-primary py-3 px-3" >Resume</p></p>
     </ul>
   </nav>
 
@@ -24,14 +24,14 @@
     <img src="professional_photo.jpg" alt="Professional Photo" class="home-img">
     <h1 id="user-detail-name">John Doe</h1>
     <p id="user-detail-intro">Software Developer</p>
-    <a href="#" id="resume-link-2" target="_blank" rel="noopener noreferrer"><button id="resume-button-2">View Resume</button></a>
+    <li class="nav-item"><p  style="margin-top: 10px;"><p download="Channa-Keshava-Resume.pdf"  onclick="DownloadFile('Channa-Keshava-Resume.pdf')" href="https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link" target="_blank" class="btn btn-primary py-3 px-3">Resume</p></p></li>
   </section>
 
   <!-- About Section -->
   <section id="about" class="about section">
     <h2>About Me</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed tortor vel nunc bibendum pharetra. Sed consectetur lacus eget sem consequat, vel consequat justo suscipit. Aenean venenatis quis enim in mattis. Suspendisse potenti. In sed quam vehicula, placerat ex vel, dignissim enim. Ut nec dui vitae orci ultrices gravida.</p>
-    <a href="#" id="resume-link-2" target="_blank" rel="noopener noreferrer"><button id="resume-button-2">View Resume</button></a>
+    <li class="nav-item"><p  style="margin-top: 10px;"><p download="Channa-Keshava-Resume.pdf"  onclick="DownloadFile('Channa-Keshava-Resume.pdf')" href="https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link" target="_blank" class="btn btn-primary py-3 px-3">Resume</p></p></li>
   </section>
 
   <section id="skills" class="skills section">
@@ -168,5 +168,73 @@
     </div>
   </div>
 </section>
+<script>
 
-    
+	function scrolltoTop(){
+		document.body.scrollTop = 0; // For Safari
+  		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+	let bb = document.getElementById("githubCommits");
+	bb.addEventListener("click" , ()=>{
+		// event.preventdefault();
+		window.open(
+            "https://github.com/Channa47", "_blank");
+	})
+
+	// new GitHubCalendar(".calendar", "Channa47", { responsive: true });
+	new GitHubCalendar(".calendar", "Channa47", {
+    responsive: true,
+    tooltips: true
+	});
+
+	let resumebutton = () =>{
+		// window.open('https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link')
+		console.log("channa")
+		
+	}
+	function DownloadFile(fileName) {
+            //Set the File URL.
+            var url = "Resume/" + fileName;
+ 
+            //Create XMLHTTP Request.
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true);
+            req.responseType = "blob";
+            req.onload = function () {
+                //Convert the Byte Data to BLOB object.
+                var blob = new Blob([req.response], { type: "application/octetstream" });
+ 
+                //Check the Browser type and download the File.
+                var isIE = false || !!document.documentMode;
+                if (isIE) {
+                    window.navigator.msSaveBlob(blob, fileName);
+                } else {
+                    var url = window.URL || window.webkitURL;
+                    link = url.createObjectURL(blob);
+                    var a = document.createElement("a");
+                    a.setAttribute("download", fileName);
+                    a.setAttribute("href", link);
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+            };
+            req.send();
+			window.open('https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link')
+        };
+
+
+		const obhserver = new IntersectionObserver((entries)=>{
+			entries.forEach((entry)=>{
+				if(entry.isIntersecting){
+					entry.target.classList.add("show")
+				}else{
+					entry.target.classList.remove("show")
+				}
+			})
+		})
+
+		const hiddenElemts = document.querySelectorAll('.hidden');
+		hiddenElemts.forEach((el)=>obhserver.observe(el));
+
+  </script>
