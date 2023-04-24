@@ -19,19 +19,23 @@
       <li><a class="nav-link resume" href="#Resume">Resume</a></li>
     </ul>
   </nav>
-  <a class="resume-button" id="resume-link-1" href="./Resume/Channa-Keshava-Resume.pdf" target="_blank" download>Download Resume</a>
+  <!-- <a class="resume-button" id="resume-link-1" href="./Resume/Channa-Keshava-Resume.pdf" target="_blank" download>Download Resume</a> -->
   <!-- Home Section -->
   <section id="home">
     <img src="professional_photo.jpg" alt="Professional Photo" class="home-img">
     <h1 id="user-detail-name">John Doe</h1>
     <p id="user-detail-intro">Software Developer</p>
-    <a class="resume-button" id="resume-link-1" href="./Resume/Channa-Keshava-Resume.pdf" target="_blank" download>Download Resume</a>
+    <button  id="resume-button-1"  onclick="DownloadFile('Channa-Keshava-Resume.pdf')" download="Channa-Keshava-Resume.pdf" class="btn btn-primary py-3 px-3 hidden">Resume &#x2b07;</button>
   </section>
 
   <!-- About Section -->
   <section id="about" class="about section">
     <h2>About Me</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed tortor vel nunc bibendum pharetra. Sed consectetur lacus eget sem consequat, vel consequat justo suscipit. Aenean venenatis quis enim in mattis. Suspendisse potenti. In sed quam vehicula, placerat ex vel, dignissim enim. Ut nec dui vitae orci ultrices gravida.</p>
+    <div id="Resume">
+      <!-- <a class="resume-button" id="resume-link-2" href="./Resume/Channa-Keshava-Resume.pdf" target="_blank" download>Download Resume</a> -->
+      <button  id="resume-button-2"  onclick="DownloadFile('Channa-Keshava-Resume.pdf')" download="Channa-Keshava-Resume.pdf" class="btn btn-primary py-3 px-3 hidden">Resume &#x2b07;</button>
+    </div>
   </section>
 
   <section id="skills" class="skills section">
@@ -75,9 +79,6 @@
           <img src="path/to/skill/image" alt="Skill Name" class="skills-card-img">
           <h3 class="skills-card-name">Skill Name</h3>
         </div>
-      </div>
-      <div id="Resume">
-        <a class="resume-button" id="resume-link-2" href="./Resume/Channa-Keshava-Resume.pdf" target="_blank" download>Download Resume</a>
       </div>
     </div>
   </div>
