@@ -185,19 +185,6 @@
     </div>
   <!-- stats -->
   <!-- calender -->
-  <section>
-    <div style="margin-right: 200px;" id="githubCommits" class="row hidden" >
-      <!-- GitHub Commits -->
-        <div class="col offset-lg-3 offset-xl-2 p-md-5">
-          <div class="d-none d-md-block" >
-            <div class="calendar react-activity-calendar">
-              <!-- Loading stuff -->
-              Loading the data just for you.
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
 </section>
 <section id="contact" class="contact section">
   <div class="container">
@@ -246,12 +233,12 @@
 		document.body.scrollTop = 0; // For Safari
   		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 	}
-	let bb = document.getElementById("githubCommits");
-	bb.addEventListener("click" , ()=>{
-		// event.preventdefault();
-		window.open(
-            "https://github.com/Channa47", "_blank");
-	})
+	// let bb = document.getElementById("githubCommits");
+	// bb.addEventListener("click" , ()=>{
+	// 	// event.preventdefault();
+	// 	window.open(
+  //           "https://github.com/Channa47", "_blank");
+	// })
 
 	// new GitHubCalendar(".calendar", "Channa47", { responsive: true });
 	// new GitHubCalendar(".calendar", "Channa47", {
@@ -259,11 +246,11 @@
   //   tooltips: true
 	// });
 
-	let resumebutton = () =>{
-		// window.open('https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link')
-		console.log("channa")
+	// let resumebutton = () =>{
+	// 	// window.open('https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link')
+	// 	console.log("channa")
 		
-	}
+	// }
 	function DownloadFile(fileName) {
             //Set the File URL.
             var url = "Resume/" + fileName;
