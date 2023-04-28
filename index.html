@@ -1,245 +1,552 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <title>Channa | Full-stack DEVELOPER</title>
+<html lang="en">
+  <head>
+    <title>Channa | Full-stack DEVELOPER</title>
     <link rel="shortcut icon" href="./images/icons8-man-technologist-48.png" type="image/x-icon">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-  <link rel="stylesheet" href="./index.css">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-<body>
-  <!-- Navbar -->
-  <nav id="nav-menu">
-    <ul>
-      <li><a class="nav-link home" href="#home">Home</a></li>
-      <li><a class="nav-link about" href="#about">About</a></li>
-      <li><a class="nav-link skills" href="#skills">Skills</a></li>
-      <li><a class="nav-link projects" href="#projects">Projects</a></li>
-      <li><a class="nav-link contact" href="#contact">Contact</a></li>
-      <a href="" target="_blank" class="nav-link resume"></a><button id="resume-button-1"
-        onclick="downloadResume()">Resume</button></li>
-    </ul>
-  </nav>
-  <!-- Home Section -->
-  <section id="home">
-    <div id="homediv">
-      <div>
-        <img src="./images/channa_yello.png" alt="Professional Photo" class="home-img">
-      </div>
-      <div>
-        <h1 id="user-detail-name">Channakeshava N</h1>
-        <p>Full Stack Developer</p>
-        <p>June 10,2000</p>
-        <p>Kolar,Bangalore, Karnataka</p>
-        <p>keshavachanna47@gmail.com</p>
-        <p>+91-8105411812</p>
-        <a href="" target="_blank" class="nav-link resume"></a><button id="resume-button-2"
-          onclick="downloadResume()">Download Resume</button></li>
-      </div>
-    </div>
-  </section>
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-  <!-- About Section -->
-  <section id="about" class="about section">
-    <div>
-      <h2>About Me</h2>
-      <h3 id="user-detail-intro">Result-oriented and Enthusiastic Full Stack Web Developer proficient in tech Stacks like
-        JavaScript, React Js, Node Js, Redux and MongoDB. Love to make Interactive UI's. I am a problem-solver and a
-        quick
-        learner who is constantly seeking new challenges and opportunities to grow and develop my skills. I am a highly
-        motivated Full Stack Developer with good technical skills and a passion for creating innovative and effective
-        solutions.</h3>
-    </div>
-  </section>
+    <link rel="stylesheet" href="css/aos.css">
 
-  <section id="skills" class="skills section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-      <div class="row icons-container">
-        <div class="col-lg-4 col-md-6">
-          <div class="skills-card">
-            <img src="./images/HTML5_Badge.svg" alt="Skill Name" class="skills-card-img">
-            <h3 class="skills-card-name">HTML</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="skills-card">
-            <img src="./images/icons8-css3.svg" alt="Skill Name" class="skills-card-img">
-            <h3 class="skills-card-name">CSS</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="skills-card">
-            <img src="./images/icons8-git.svg" alt="Skill Name" class="skills-card-img">
-            <h3 class="skills-card-name">Skill Name</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="skills-card">
-            <img src="./images/icons8-javascript.svg" alt="Skill Name" class="skills-card-img">
-            <h3 class="skills-card-name">GIT</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="skills-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="Skill Name" class="skills-card-img">
-            <h3 class="skills-card-name">React</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="skills-card">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-3521676-2945120.png" alt="Skill Name" class="skills-card-img">
-            <h3 class="skills-card-name">MongoDb</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="skills-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png" alt="Skill Name" class="skills-card-img">
-            <h3 class="skills-card-name">Redux</h3>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="skills-card">
-            <img src="https://w7.pngwing.com/pngs/1005/334/png-transparent-express-js-node-js-javascript-session-web-application-others.png" alt="Skill Name" class="skills-card-img">
-            <h3 class="skills-card-name">ExpressJS</h3>
-          </div>
-        </div>
-      </div>
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"  id="ftco-navbar">
+	    <div class="container">
+	      <!-- <a class="navbar-brand" href="index.html">Channa</a> -->
+		  <!-- <p style="margin-top: 10px;"><a href="https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link" target="_blank" class="btn btn-primary py-3 px-3">Resume</a></p> -->
+
+		  <div class="dropdown">
+			<button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Menu
+			</button>
+			<div class="dropdown-menu" style="background-color: rgb(0,0,0);" aria-labelledby="dropdownMenuButton">
+			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#nameDiv">Home</a>
+			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#about-section">About</a>
+			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#skills-section">Skills</a>
+			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#projects-section">Projects</a>
+			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#blog-section">Stats</a>
+			  <a class="dropdown-item" style="color: rgb(255,255,255);" href="#contact-section">Contact</a>
+			  <p  style="margin-top: 10px;"><p  onclick="DownloadFile('Channa-Keshava-Resume.pdf')"  target="_blank" class="dropdown-item" >Resume</p></p>
+			  <!-- <p  style="margin-top: 10px;"><p  onclick="DownloadFile('Channa-Keshava-Resume.pdf')"  target="_blank" class="dropdown-item" >Resume</p></p> -->
+			</div>
+		  </div>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div  class="collapse navbar-collapse"  id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li id="HomeScrolltoTop" class="nav-item"><a onclick="scrolltoTop()" class="nav-link"><span >Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Stats</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			  <li class="nav-item"><a  style="margin-top: 10px;"><a download="Channa-Keshava-Resume.pdf"  onclick="DownloadFile('Channa-Keshava-Resume.pdf')" href="https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link" target="_blank" id="resumebutton-1" class="nav-link">Resume</a></a></li>
+			  <!-- <li class="nav-item"><p  style="margin-top: 10px;"><p download="Channa-Keshava-Resume.pdf"  onclick="DownloadFile('Channa-Keshava-Resume.pdf')" href="https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link" target="_blank" class="nav-link">Resume</p></p></li> -->
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  
+    </section>
+    <div id="profileimage"  class="hidden">
+      <img src="images/channa_yello.png" alt="">
     </div>
-  </section>
-  <!-- Projects section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="row prjectconatiner">
-        <div class="col-md-4">
-          <div class="project-card">
-            <img class="project-image" src="./images/airgarage-home.png" alt="Project 1">
-            <h3 class="project-title">Air Garage</h3>
-            <p class="project-description">Air garage enables churches and businesses with extra spaces to rent them out to drivers on-demand and boost their bottom line.</p>
-            <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
-            <a class="project-github-link" href="https://github.com/Channa47/DevTV-debonair-salt-5814-">GitHub</a>
-            <a class="project-deployed-link" href="https://dev-tv-plus.vercel.app/">Deployed</a>
+	<div id="nameDiv" class="col-md-12 text-center">
+		<div>
+			<br>
+			<h1 class="animate-charcter">Hi I'am CHANNAKESHAVA</h1>
+		</div>
+		<h1 class="animate-charcter">FULL-STACK DEVELOPER</h1>
+	</div>
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/channa_yello.png);">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big ">About</h1>
+		            <h2 class="mb-4 hidden">About Me</h2>
+		            <p style="margin-top: 10%;">An Aspiring Full-Stack Developer, strong in design and integration with intuitive problem-solving skills.
+						I have ability to translate business requirements into technical solutions.</p>
+		            <ul class="about-info mt-4 px-md-0 px-2">
+		            	<li class="d-flex"><span>Name:</span> <span>Channakeshava N</span></li>
+		            	<li class="d-flex"><span>Date of birth:</span> <span>June 10, 2000</span></li>
+		            	<li class="d-flex"><span>Address:</span> <span>Kolar, Bangalore, Karnataka</span></li>
+		            	<li class="d-flex"><span>Pin code:</span> <span>563131</span></li>
+		            	<li class="d-flex"><span>Email:</span> <span>keshavachanna47@gmail.com</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>+91-8105411812</span></li>
+		            </ul>
+		          </div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+              	<p class="mb-4">
+	                <span class="number" data-number="3">4</span>
+	                <span class="hidden">Project's complete</span>
+                </p>
+				<p><p  onclick="DownloadFile('Channa-Keshava-Resume.pdf')" download="Channa-Keshava-Resume.pdf" class="btn btn-primary py-3 px-3 hidden">Resume &#x2b07;</p></p>
+              </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+		<section class="ftco-section" id="skills-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Skills</h1>
+            <h2 class="mb-4 hidden" >Tech Stack </h2>
+          </div>
+        </div>   
+		        <!--===============================================================  -->
+				<div class="skills">
+				<a class="logo_div" href="https://en.wikipedia.org/wiki/redux" rel="noopener noreferrer" target="_blank"> 
+					<img class="hidden" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png" alt="SpringBoot logo">
+					<h3 class="h3">Redux</h3>
+				</a>
+
+				<a class="logo_div" href="https://en.wikipedia.org/wiki/ExpressJs" rel="noopener noreferrer" target="_blank"> 
+					<img class="hidden" src="https://w7.pngwing.com/pngs/1005/334/png-transparent-express-js-node-js-javascript-session-web-application-others.png" alt="Spring logo">
+					<h3 class="h3">Express JS</h3>
+				</a>
+
+				<a class="logo_div" href="https://reactjs.org/docs/getting-started.html" rel="noopener noreferrer" target="_blank"> 
+					<img class="hidden" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="Hibernate logo">
+					<h3 class="h3">ReactJS</h3>
+				</a>
+
+				<a class="logo_div" href="https://en.wikipedia.org/wiki/Mongodb" rel="noopener noreferrer" target="_blank"> 
+					<img class="hidden" src="https://cdn.iconscout.com/icon/free/png-256/mongodb-3521676-2945120.png" alt="MongoDB logo">
+					<h3 class="h3">MangoDb</h3>
+				</a>
+
+				<a class="logo_div" href="https://github.com/" rel="noopener noreferrer" target="_blank"> 
+					<img class="hidden" src="./images/icons8-github.svg" alt="Github logo">
+					<h3 class="h3">GITHUB</h3>
+				</a>
+
+				<a class="logo_div" href="https://en.wikipedia.org/wiki/HTML" rel="noopener noreferrer" target="_blank"> 
+					<img class="hidden" src="./images/icons8-html-5.svg" alt="html5 logo">
+					<h3 class="h3">HTML 5</h3>
+				</a>	
+
+				<a class="logo_div" href="https://en.wikipedia.org/wiki/CSS" rel="noopener noreferrer" target="_blank"> 
+					<img class="hidden" src="./images/icons8-css3.svg" alt="CSS logo">
+					<h3 class="h3">CSS</h3>
+				</a>
+
+				<a class="logo_div" href="https://en.wikipedia.org/wiki/JS" rel="noopener noreferrer" target="_blank"> 
+					<img class="hidden" src="./images/icons8-javascript.svg" alt="JavaScript logo">
+					<h3 class="h3">JAVASCRIPT</h3>
+				</a>
+				</div>
+				<!-- ===================================================================skills -->
+			<!-- </div> -->
+			<!-- ==================================================================================================== -->
+			<!-- /////////////////////////// -->
+			<!-- <div class="container">
+				<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Tools</h1>
+					<h2 class="mb-4" >Tools</h2>
+				</div>
+				</div>   
+		   
+				 <div class="skills">
+
+				<a class="logo_div" href="https://github.com/" rel="noopener noreferrer" target="_blank"> 
+					<img src="./images/icons8-github.svg" alt="Github logo">
+					<h3 class="h3">GITHUB</h3>
+				</a>	
+
+				<a class="logo_div" href="https://www.npmjs.com/" rel="noopener noreferrer" target="_blank"> 
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX////LODfvysrMLSzKOzrYMjHknZ3+/PzTMC7mm5vMLy7mrq3PODfZUVHLNDPJJybTNjXehoX88vLRVlbfeXnsubnQUlH56OjQQD/aQUDaeXnZbm7y0dHmoqLLISDehYXgjY3VYF/PRUXuw8PhgH/strb13NzcTk3kp6bhd3bhQD7fbGv55eX99fXz1tbkk5NDAKciAAADDElEQVR4nO3cYVeiQBSAYTGTMhbJNAxRS9vWXWv7//9u+xAzVxaQiyZC7/Nx1mF84+gRDrOdDgAAAAAAAAAAAAAAAAAAAAAAAAAAANBEYbetws/Cm8VFOy1uksKB57SRN7CFdb+XL0Jh81HYfBQ23zct7GnJI5528v5jZhb6l0ryTQbKuYGY62kXziN+n2UU9ryneV9jfr3yzXucLpWTIzPXCe50c/MP+uQVFTrBo/K6xL2zhT9i5eT10Pxpg2fl3FyPQXHhrepobmckC7sfA5rJP0Xh2NXMLXB71MJOulDD7Ux2CpUr56GQwjQKC1BYEYUUplFY4MwKX5bj6NP49s2Olyq8mUVm8tqMliscRcnk8SwaifG+PehM/iCuWtj9FRir0I6XKlxemrnDjbIw9OzCgSgMf18lo4M/E/GDuGph/MNclPj38k9ZpvAx6P23aOlzOPWSyd5UFkZ+Mt57qL0wa1FFoVnAkYVje3FJYUMLIwq/aWGv9YVNOod801BIYf2FfA4ppLD+Qj6HFFJYfyGfwxMXHnQnqgGFyys/ob6b2IzC+XaW2E5aWTh6tezcNn3TZGvTOaSw+ffazqiwSeeQbxoKKay/8IDPoZthtzA0rylZ6GYfNPX0ZeZrwt1CO54qNP9wjHN4J55UeKt+DlNP0OacwzdROBULh89m4d7DWkzY9wTtLM7cyBdvVrZwtTYvitf3JQpfsncHxu9i4W32wt2JLJzY8fVWnMP+X3vQcXGh4w+z7WxYuLDjF3adgqunxf6D5i083L/wR4p4vRg/9n6LUlfAJ0WhVqn7NCdFoRaFp0ehFoWnJwqPst0vf9/TTuGx9hmWYAo3i6vqZGHe3jXxY9gJDlhLa5HcYI+vK+u/r2zhKmf/4fzJPATr+LPqi+lptwtmEfsP8/eQyh/Dk/3H/ALZF59ldEJZWOLDOtgcsJr+7R3BSBZqvt4ag0IKzx+FFJ4/ClO8wWb/Mc/L6H44UP0Xao0rdHNuVed6rfsdAwAAAAAAAAAAAAAAAAAAAAAAAAAAAOfvHxAD0FeqbIDMAAAAAElFTkSuQmCC" alt="NPM logo">
+					<h3 class="h3">NPM</h3>
+				</a>
+				<a class="logo_div" href="https://github.com/rangav/thunder-client-support" rel="noopener noreferrer" target="_blank"> 
+					<img src="data:image/png;base64,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" alt="Thunder Clint logo">
+					<h3 class="h3">Thunder Clint</h3>
+				</a>
+				<a class="logo_div" href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank"> 
+					<img src="data:image/png;base64,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" alt="VS Code logo">
+					<h3 class="h3">Vs Code</h3>
+				</a>
+				</div> -->
+				<!-- ===================================================================skills -->
+			<!-- </div> --> 
+			<!-- //////////////////////////////// -->
+		</section>
+ 
+
+    <section class="ftco-section ftco-project" id="projects-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4 hidden">Projects</h2>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <img class="project-image" src="./images/AtoZScreenShot.png" alt="Project 2">
-            <h3 class="project-title">Amazon.in</h3>
-            <p class="project-description">AtoZ is E-commercer web site were users can able buy different kind of products through online it is basically clone of Amazon.in</p>
-            <p class="project-tech-stack">Tech Stack: HTMl,CSS, React, Node.js, MongoDB</p>
-            <a class="project-github-link" href="https://github.com/Channa47/DevTV-debonair-salt-5814-">GitHub</a>
-            <a class="project-deployed-link" href="https://dev-tv-plus.vercel.app/">Deployed</a>
+    		<div class="projects" style="margin-top: 5%;">
+				<div>
+					<div class="image_div">
+						<img  src="./images/airgarage-home.png" alt="Air Garage(clone)">
+					</div>
+					<div class="para_div">
+						<h3>Air Garage Clone</h3>
+						<p class="projectDes">Air garage enables churches and businesses with extra spaces to rent
+							them out to drivers on-demand and boost their bottom line.
+							</p>
+							<P class="projectDes">Collaborative Project</P>
+						<div class="hidden" >
+							<button>Java-Script</button>
+							<button>HTML</button>
+							<button>CSS</button>
+						</div>
+					</div>
+					<div>
+						<a href="https://github.com/Amanyadav2030/Airgarage-Clone" target="_blank"><button
+								class="button-84">Code</button></a>
+						<a href="https://benevolent-mermaid-72566d.netlify.app/" target="_blank"><button class="button-84">Live</button></a>
+					</div>
+					</div>
+				<div>
+					<div class="image_div">
+						<img c src="./images/devvvvvvvvvv.png" alt="">
+					</div>
+					<div class="para_div">
+						<h3> Dev Tv Clone</h3>
+						<p class="projectDes">Apple Tv Clone is a video streaming site where you can able to find the exclusive content copy rights owned by apple.</p>
+						<p class="projectDes">Collaborative Project</p>
+						<div class="hidden">
+							<button>React</button>
+							<button>CSS</button>
+							<button>JAVASCRIPT</button>
+							<button>Chakra Ui</button>
+							<button>Redux</button>
+						</div>
+					</div>
+					<div>
+						<a href="https://github.com/Channa47/DevTV-debonair-salt-5814-" target="_blank"><button class="button-84">Code</button></a>
+            			<a href="https://devtvplus.netlify.app/" target="_blank"><button class="button-84">Live</button></a>
+						
+					</div>
+				</div>
+				<!--  -->
+				<div>
+					<div class="image_div">
+						<img  src="./images/bufferblulock.png" alt="">
+					</div>
+					<div class="para_div">
+						<h3> Buffer Clone - Blue Lock</h3>
+						<p class="projectDes">Buffer is a social media management application
+							to manage multiple social media networks.</p>
+						<p class="projectDes">Collaborative Project</p>
+						<div class="hidden" >
+							<button>HTML</button>
+							<button>CSS</button>
+							<button>JAVASCRIPT</button>
+							<button>React</button>
+							<button>Redux</button>
+							<button>Chakra UI</button>
+							<button>Mongo DB</button>
+							<button>express js</button>
+							<button>Mongoose</button>
+						</div>
+					</div>
+					<div>
+						<br>
+						<a href="https://github.com/Channa47/Buffer.com-clone" target="_blank"><button class="button-84">Code</button></a>
+            			<a href="https://bluelock.vercel.app/" target="_blank"><button class="button-84">Live</button></a>
+						
+					</div>
+				</div>
+				<!--  -->
+				<!--  -->
+				<div>
+					<div class="image_div">
+						<img  src="./images/AtoZScreenShot.png" alt="">
+					</div>
+					<div class="para_div">
+						<h3> AtoZ.in</h3>
+						<p class="projectDes">AtoZ is E-commercer web site were users can able buy different kind of products through online it is basically clone of Amazon.in</p>
+						<P class="projectDes">Collaborative Project</P>
+						<div class="hidden" >
+							<button>HTML</button>
+							<button>CSS</button>
+							<button>JAVASCRIPT</button>
+							<button>React</button>
+							<button>Redux</button>
+							<button>Chakra UI</button>
+							<button>Mongo DB</button>
+							<button>express js</button>
+							<button>Mongoose</button>
+						</div>
+					</div>
+					<div>
+						<br>
+						<a href="https://github.com/Channa47/AtoZ-Amazon.in--Clone" target="_blank"><button class="button-84">Code</button></a>
+            			<a href="https://atozamazon.netlify.app/" target="_blank"><button class="button-84">Live</button></a>
+						
+					</div>
+				</div>
+				<!--  -->
+    		</div>
+    	</div>
+    </section>
+
+
+    <section class="ftco-section" id="blog-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">My Statistics</h1>
+            <h2 class="mb-4 hidden">My Statistics</h2>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <img class="project-image" src="./images/bufferblulock.png" alt="Project 3">
-            <h3 class="project-title">Buffer.com</h3>
-            <p class="project-description">Buffer is a social media management application to manage multiple social media networks.</p>
-            <p class="project-tech-stack">Tech Stack: HTMl,CSS, React, Node.js, MongoDB</p>
-            <a class="project-github-link" href="https://github.com/Channa47/DevTV-debonair-salt-5814-">GitHub</a>
-            <a class="project-deployed-link" href="https://dev-tv-plus.vercel.app/">Deployed</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <img class="project-image" src="./images/devvvvvvvvvv.png" alt="Project 4">
-            <h3 class="project-title">AppleTv+</h3>
-            <p class="project-description">Apple Tv Clone is a video streaming site where you can able to find the exclusive content copy rights owned by apple.</p>
-            <p class="project-tech-stack">Tech Stack: HTMl,CSS, React, Node.js, MongoDB</p>
-            <a class="project-github-link" href="https://github.com/Channa47/DevTV-debonair-salt-5814-">GitHub</a>
-            <a class="project-deployed-link" href="https://dev-tv-plus.vercel.app/">Deployed</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- stats -->
-    <div id="GitStats">
-      <img id="github-streak-stats"
-        src="https://github-readme-streak-stats.herokuapp.com/?user=channa47&show_icons=true&count_private=true&border=lightblue"
-        alt="" srcset="">
-        <img id="github-top-langs"
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=channa47&show_icons=true&count_private=true"
-        alt="" srcset="">
-      <img id="github-stats-card"
-        src="https://github-readme-stats.vercel.app/api?username=channa47&count_private=true&show_icons=true" alt=""
-        srcset="">
-    </div>
-    <!-- stats -->
-    <!-- calender -->
-    <div class="react-activity-calendar">
-      <!-- github calender -->
-    </div>
-  </section>
-  <section id="contact" class="contact section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="section-title">Contact Me</h2>
-          <p>Feel free to reach out to me through any of the following channels:</p>
-        </div>
-      </div>
-      <div class="row contactsectionMainDiv">
-        <div class="col-md-6">
-          <ul class="contact-list">
-            <li id="contact-github"><i class="fa fa-github"></i><a
-                href="https://github.com/channa47">github.com/channa47</a></li>
-            <li id="contact-linkedin"><i class="fa fa-linkedin"></i><a
-                href="https://www.linkedin.com/in/channakeshava/">linkedin.com/in/channakeshava/</a></li>
-            <li id="contact-phone"><i class="fa fa-phone"></i>+91 8105411812</li>
-            <li id="contact-email"><i class="fa fa-envelope"></i><a
-                href="mailto:keshavachanna47@gmail.com">keshavachanna47@gmail.com</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <form id="contact-form" method="post" action="#">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <br>
-              <input type="text" class="form-control" id="name" name="name" required>
+        <div class="blogs">
+          <div class= "blog hidden" >
+          	<div class="blog-entry justify-content-end">
+             <a href="https://github.com/Channa47/Buffer.com-clone" target="_blank"> <img src="https://camo.githubusercontent.com/5442b50e482ab0745f22a51753913c091eb65f2a42d97a6c53cced9a2642e7c7/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d6368616e6e6134372673686f775f69636f6e733d74727565266c6f63616c653d656e" class="image">
+              </img></a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center mb-3 meta"> -->
+	                <p class="mb-0">
+	                	<span class="mr-2">My Stats in Github</span>
+	                </p> 
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <br>
-              <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+		  <div class= "blog hidden">
+			<div class="blog-entry">
+		  <a href="https://github.com/Channa47" target="_blank">
+			  <img src="https://camo.githubusercontent.com/4e7aec07b1783d15ef28bf9668394df22ee02d54b7c6580db78489fcf6783f17/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d6368616e6e6134372673686f775f69636f6e733d74727565266c6f63616c653d656e266c61796f75743d636f6d70616374" class="image">
+			</img>
+			</a>
+			
+			<div class="text mt-3 float-right d-block">
+				<div class="d-flex align-items-center mb-3 meta">
+				  <p class="mb-0">
+					  <span class="mr-2">-->Most used in GitHub</span>
+				  </p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+          <div class= "blog hidden">
+          	<div class="blog-entry justify-content-end">
+			<a href="https://github.com/Channa47" target="_blank">
+              <img src="https://camo.githubusercontent.com/1c3967a8e06d47a2d3fa142be8f1f4038455cb866e7763aeb4f0c862c9054ee4/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d6368616e6e61343726" class="image">
+              </img></a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center mb-3 meta">
+	                <p class="mb-0">
+						<span class="mr-2">--> My streak in Github</span>
+	                </p>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <br>
-              <input type="text" class="form-control" id="subject" name="subject" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <br>
-              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
+          </div>
+          
         </div>
       </div>
-    </div>
-  </section>
-  <div id="final">
-    <h4>Created By Channakeshav ❤️ </h4>
-  </div>
-  <script>
-    function downloadResume() {
-      var url = "https://drive.google.com/uc?export=download&id=1C7oqGjpEtU_b1b_aWgVfq9PPpKi9vkaf";
-      var a = document.createElement("a");
-      a.href = url;
-      a.target = "_blank";
-      a.download = "resume.pdf";
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    }
+	  <!-- <h2 style="margin-top:10px ;">Git Calender</h2> -->
+	  
+	  <!-- <img id="imgofgitcal" src="./images/gitcallll.png" width="100%"  alt="gitcalender" style="margin-top:30px" style="padding: 20px;"> -->
+	  <div style="margin-right: 200px;" id="githubCommits" class="row hidden" onclick="gotogit()">
+        <!-- GitHub Commits -->
+          <div class="col offset-lg-3 offset-xl-2 p-md-5">
+            <div class="d-none d-md-block" >
+              <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+              </div>
+            </div>
+          </div>
+        </div>
+	
+    </section>
 
 
-  </script>
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<a href="https://www.linkedin.com/in/channakeshava-n-a17aa9215" target="_blank"><span class="icon-linkedin-square"></span></a>
+          		</div>
+          		<h3 class="mb-4">Linkedin</h3>
+	            <p><a href="https://www.linkedin.com/in/channakeshava-n-a17aa9215" target="_blank">Channakeshava</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          		<a href="https://wa.me/+918105411812" target="_blank"><span class="icon-whatsapp"></span></a>	
+          		</div>
+          		<h3 class="mb-4">WhatsApp</h3>
+	            <p><a href="https://wa.me/+918105411812" target="_blank">+91 8105411812</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<a href="mailto:keshavachanna47@gmail.com" target="_blank"><span class="icon-paper-plane"></span></a>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:keshavachanna47@gmail.com" target="_blank">keshavachanna47@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<a href="https://github.com/Channa47" target="_blank"><span class="icon-github"></span></a>
+          		</div>
+          		<h3 class="mb-4">GitHub</h3>
+	            <p><a href="https://github.com/Channa47" target="_blank">channa</a></p>
+	          </div>
+          </div>
+        </div>
+
+        </div>
+    </section>
+		
+    <div style="text-align: center;">
+      <h6>Created By Channa</h6>
+    </div>         
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    
+  </body>
+</html>
+<script>
+
+	function scrolltoTop(){
+		document.body.scrollTop = 0; // For Safari
+  		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+	let bb = document.getElementById("githubCommits");
+	bb.addEventListener("click" , ()=>{
+		// event.preventdefault();
+		window.open(
+            "https://github.com/Channa47", "_blank");
+	})
+
+	// new GitHubCalendar(".calendar", "Channa47", { responsive: true });
+	new GitHubCalendar(".calendar", "Channa47", {
+    responsive: true,
+    tooltips: true
+	});
+
+	let resumebutton = () =>{
+		// window.open('https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link')
+		console.log("channa")
+		
+	}
+
+	function DownloadFile(fileName) {
+            //Set the File URL.
+            var url = "Resume/" + fileName;
+ 
+            //Create XMLHTTP Request.
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true);
+            req.responseType = "blob";
+            req.onload = function () {
+                //Convert the Byte Data to BLOB object.
+                var blob = new Blob([req.response], { type: "application/octetstream" });
+ 
+                //Check the Browser type and download the File.
+                var isIE = false || !!document.documentMode;
+                if (isIE) {
+                    window.navigator.msSaveBlob(blob, fileName);
+                } else {
+                    var url = window.URL || window.webkitURL;
+                    link = url.createObjectURL(blob);
+                    var a = document.createElement("a");
+                    a.setAttribute("download", fileName);
+                    a.setAttribute("href", link);
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+            };
+            req.send();
+			window.open('https://drive.google.com/file/d/1pateOmpHP03hayVqPCkBwa_lJ0lTwSwO/view?usp=share_link')
+        };
+
+
+		const obhserver = new IntersectionObserver((entries)=>{
+			entries.forEach((entry)=>{
+				if(entry.isIntersecting){
+					entry.target.classList.add("show")
+				}else{
+					entry.target.classList.remove("show")
+				}
+			})
+		})
+
+		const hiddenElemts = document.querySelectorAll('.hidden');
+		hiddenElemts.forEach((el)=>obhserver.observe(el));
+</script>
