@@ -34,6 +34,9 @@
 	body a:hover{
 		cursor: url('./images/one-finger.png'),auto !important;
 	}
+	.contactroitemhovereffect{
+		cursor: url('./images/one-finger.png'),auto !important;
+	}
 	.PdfDownload:hover{
 		cursor: url('./images/pdf.png'),auto !important;
 		background-color: #33b249;
@@ -461,7 +464,7 @@
 			</div>
 
 			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate contactroitemhovereffect" id="lldn">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<a href="https://www.linkedin.com/in/channakeshava-n-a17aa9215" target="_blank"><span
@@ -472,7 +475,7 @@
 								target="_blank">Channakeshava</a></p>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate contactroitemhovereffect" id="wwup">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<a href="https://wa.me/+918105411812" target="_blank"><span
@@ -482,7 +485,7 @@
 						<p><a href="https://wa.me/+918105411812" target="_blank">+91 8105411812</a></p>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate contactroitemhovereffect" id="eemm">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<a href="mailto:keshavachanna47@gmail.com" target="_blank"><span
@@ -492,7 +495,7 @@
 						<p><a href="mailto:keshavachanna47@gmail.com" target="_blank">keshavachanna47@gmail.com</a></p>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate contactroitemhovereffect" id="gghb">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<a href="https://github.com/Channa47" target="_blank"><span class="icon-github"></span></a>
@@ -611,4 +614,18 @@
 	hiddenElemts.forEach((el) => obhserver.observe(el));
 
 	console.log(document.body.scrollHeight); //5410
+
+
+	document.getElementById("lldn").addEventListener("click",()=>{
+		window.open("https://www.linkedin.com/in/channakeshava-n-a17aa9215","_blank")
+	})
+	document.getElementById("wwup").addEventListener("click",()=>{
+		window.open("https://wa.me/+918105411812","_blank")
+	})
+	document.getElementById("eemm").addEventListener("click",()=>{
+		window.open("mailto:keshavachanna47@gmail.com","_blank")
+	})
+	document.getElementById("gghb").addEventListener("click",()=>{
+		window.open("https://github.com/Channa47","_blank")
+	})
 </script>
