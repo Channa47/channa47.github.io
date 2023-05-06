@@ -31,15 +31,22 @@
 	body {
 		cursor: url('./images/cursor\ \(1\).png'), auto;
 	}
-	body a:hover{
-		cursor: url('./images/one-finger.png'),auto !important;
+
+	body a:hover {
+		cursor: url('./images/one-finger.png'), auto !important;
 	}
-	.contactroitemhovereffect{
-		cursor: url('./images/one-finger.png'),auto !important;
+
+	.contactroitemhovereffect {
+		cursor: url('./images/one-finger.png'), auto !important;
 	}
-	.PdfDownload:hover{
-		cursor: url('./images/pdf.png'),auto !important;
+
+	.PdfDownload:hover {
+		cursor: url('./images/pdf.png'), auto !important;
 		background-color: #33b249;
+	}
+
+	.hackerEffect {
+		font-family: "Space mono", monospace;
 	}
 </style>
 
@@ -64,7 +71,8 @@
 					<a class="dropdown-item" style="color: rgb(255,255,255);" href="#blog-section">Stats</a>
 					<a class="dropdown-item" style="color: rgb(255,255,255);" href="#contact-section">Contact</a>
 					<p style="margin-top: 10px;">
-					<p onclick="DownloadFile('Channa-Keshava-Resume.pdf')" target="_blank" class="dropdown-item PdfDownload">Resume
+					<p onclick="DownloadFile('Channa-Keshava-Resume.pdf')" target="_blank"
+						class="dropdown-item PdfDownload">Resume
 					</p>
 					</p>
 					<!-- <p  style="margin-top: 10px;"><p  onclick="DownloadFile('Channa-Keshava-Resume.pdf')"  target="_blank" class="dropdown-item" >Resume</p></p> -->
@@ -102,9 +110,9 @@
 	<div id="nameDiv" class="col-md-12 text-center">
 		<div>
 			<br>
-			<h1 class="animate-charcter">Hi I'am CHANNAKESHAVA</h1>
+			<h1 class="animate-charcter" >Hi I'am <span data-value="CHANNAKESHAVA" id="JackerEffectforTitle" >CHANNAKESHAVA</span> </h1>
 		</div>
-		<h1 class="animate-charcter">FULL-STACK DEVELOPER</h1>
+		<h1 class="animate-charcter" >FULL-STACK DEVELOPER</h1>
 	</div>
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
@@ -510,7 +518,7 @@
 	</section>
 
 	<div style="text-align: center;">
-		<h6>Created By Channa</h6>
+		<h6 data-value="Created By Channa" id="hackerEffect" >Created By Channa</h6>
 	</div>
 
 
@@ -616,16 +624,57 @@
 	console.log(document.body.scrollHeight); //5410
 
 
-	document.getElementById("lldn").addEventListener("click",()=>{
-		window.open("https://www.linkedin.com/in/channakeshava-n-a17aa9215","_blank")
+	document.getElementById("lldn").addEventListener("click", () => {
+		window.open("https://www.linkedin.com/in/channakeshava-n-a17aa9215", "_blank")
 	})
-	document.getElementById("wwup").addEventListener("click",()=>{
-		window.open("https://wa.me/+918105411812","_blank")
+	document.getElementById("wwup").addEventListener("click", () => {
+		window.open("https://wa.me/+918105411812", "_blank")
 	})
-	document.getElementById("eemm").addEventListener("click",()=>{
-		window.open("mailto:keshavachanna47@gmail.com","_blank")
+	document.getElementById("eemm").addEventListener("click", () => {
+		window.open("mailto:keshavachanna47@gmail.com", "_blank")
 	})
-	document.getElementById("gghb").addEventListener("click",()=>{
-		window.open("https://github.com/Channa47","_blank")
+	document.getElementById("gghb").addEventListener("click", () => {
+		window.open("https://github.com/Channa47", "_blank")
 	})
+
+	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	document.getElementById("hackerEffect").onmouseover = event => {
+		let itarations = 0 ; 
+		let interval =  setInterval(()=>{
+			event.target.innerText = event.target.innerText.split("")
+		.map((letter,index) => {
+			if(index < itarations){
+				return event.target.dataset.value[index];
+			}
+			return letters[Math.floor(Math.random() * 26)]
+		})
+		.join("");
+		if(itarations >= event.target.dataset.value.length ){
+			clearInterval(interval)
+		}
+
+		itarations += 1/5; 
+		},20)
+		
+	}
+	
+	// document.getElementById("JackerEffectforTitle").onmouseover = event => {
+	// 	let itarations = 0 ; 
+	// 	let interval =  setInterval(()=>{
+	// 		event.target.innerText = event.target.innerText.split("")
+	// 	.map((letter,index) => {
+	// 		if(index < itarations){
+	// 			return event.target.dataset.value[index];
+	// 		}
+	// 		return letters[Math.floor(Math.random() * 26)]
+	// 	})
+	// 	.join("");
+	// 	if(itarations >= event.target.dataset.value.length ){
+	// 		clearInterval(interval)
+	// 	}
+
+	// 	itarations += 1/5; 
+	// 	},30)
+		
+	// }
 </script>
